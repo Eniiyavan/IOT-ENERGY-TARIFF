@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' http-equiv='refresh' content='6'>
+	<title>IOT ENERGY TARIFF</title>
+	<!-- CSS property to place div
+            side by side -->
+	        <style>
+	        	body{ text-align:center; font-family:Comic Sans MS, Comic Sans, cursive ;font-size:18px; Color: #FFFFFF;background-image: url('https://img.freepik.com/premium-photo/electric-transmission-tower-with-glowing-wires-against-starry-sky-background_141856-1592.jpg');background-repeat: no-repeat;background-attachment: fixed;background-size: cover; }
+            #led1 {
+                float:left;
+                background:black;
+                width:25%;
+                height:1000px;
+            }
+            #led2{
+                float:left;
+                background:black;
+                width:25%;
+                height:1000px;
+            }
+            #led3{
+                float:left;
+                background:black;
+                width:25%;
+                height:1000px;
+            }
+            #led4{
+                float:left;
+                background:black;
+                width:25%;
+                height:1000px;
+            }
+            h1{
+                color:WHITE;
+                text-align:center;
+            }
+            h2{
+            	color:white;
+            	text-align: center;
+            }
+            section{
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .btn_container{
+            margin-top: 50px;
+        }
+        .bulb_btn{
+            font-family: 'Baloo Bhai 2', cursive;
+            width: 150px;
+            height: 50px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            background: #34dab4;
+            font-size: 30px;
+        }
+        </style>
+
+</head>
+<body>
+	 <div id = 'boxes'>
+            <h1>IOT ENERGY TARIFF</h1>
+            <h2>Enter Monthly Budget Amount : <input type='text' id="demo5"><button onclick='calculate()'>Calculate</button></h2>
+             
+            <div id = 'led1'>
+                <h2>LED 1</h2>
+                 <section>
+        <img src='https://i.postimg.cc/KjK1wL3c/bulb-off.png' id='bulb1' width='200'>
+        <div class='btn_container'><a><button id='on' class='bulb_btn' onclick='bulb_on()'>on</button></a>
+        <a><button id='off' class='bulb_btn' onclick="bulb_off()">off</button></div></a>
+    </section>
+    <h2>Amount : <input type='text' id='demo1'></h2>
+   
+
+               
+            </div>
+             
+            <div id = 'led2'>
+                <h2>LED 2</h2>
+                <section>
+        <img src='https://i.postimg.cc/KjK1wL3c/bulb-off.png' id='bulb2' width='200'>
+        <div class='btn_container'><a href=""><button id="on" class='bulb_btn'>on</button></a>
+        <a href=""><button id='off' class='bulb_btn'>off</button></div></a>
+    </section>
+     <h2>Amount : <input type='text\' id='demo2'></h2>
+                
+            </div>
+             
+            <div id = 'led3'>
+                <h2>LED 3</h2>
+                <section>
+        <img src='https://i.postimg.cc/KjK1wL3c/bulb-off.png' id='bulb3' width='200'>
+        <div class='btn_container'><a><button id='on' class='bulb_btn' >on</button></a>
+        <a><button id='off' class='bulb_btn' >off</button></div></a>
+    </section>
+     <h2>Amount : <input type='text\' id='demo3'></h2>
+                
+            </div>
+             <div id = 'led4'>
+                <h2>LED 4</h2>
+                <section>
+        <img src='https://i.postimg.cc/KjK1wL3c/bulb-off.png' id='bulb4' width='200'>
+        <div class='btn_container'><a><button id='on' class='bulb_btn'>on</button></a>
+        <a><button id='off' class='bulb_btn'>off</button></div></a>
+    </section>
+     <h2>Amount : <input type='text\' id='demo4'></h2>
+               
+            </div>
+            
+
+            
+
+        </div>
+        <script type="text/javascript">function bulb_on(){
+      document.getElementById('bulb1').src='https://i.postimg.cc/6QyTynzr/bulb-on.png';
+  }
+  function bulb_off(){
+      document.getElementById('bulb1').src='https://i.postimg.cc/KjK1wL3c/bulb-off.png';
+  }
+  function calculate(){
+     var amount= document.getElementById('demo5').value;
+     console.log(amount);
+  }</script>
+
+
+</body>
+</html>
